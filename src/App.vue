@@ -1,32 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <el-containter>
+      <el-header>Header here</el-header>
+      <el-aside>amet consectetur adipisicing elit. Unde eligendi in voluptatem id, ad quia quam nisi eveniet</el-aside>
+      <el-container>
+        <el-main>main content here Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vitae harum tempore expedita voluptas, architecto maiores itaque corporis repellendus iusto nesciunt ratione, provident optio quas perferendis delectus aliquid placeat deleniti.</el-main>
+      </el-container>
+    </el-containter>
+    <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.el-aside {
+  background-color: chocolate;
+  color: white;
+  min-height: 100vh;
 }
 </style>
